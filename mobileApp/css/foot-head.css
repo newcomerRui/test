@@ -1,0 +1,86 @@
+.mtb15 {
+    margin: 0.2rem 0 0.2rem 0;
+}
+/*头部样式*/
+.input-group input {
+    width: 98% !important;
+    margin-left: 1%;
+}
+
+.input-group-addon1 {
+    padding: 6px 9px !important;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #ccc !important;
+    border-radius: 50% !important;
+}
+
+.input-group input,.br10 {
+    border-radius: 10px !important;
+}
+
+
+
+/*尾部*/
+.height15 {
+    height: 1.8rem;
+}
+
+.footer-module {
+    padding-top: 0.1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    background: #fff;
+    height: 2rem;
+}
+
+.footer-item {
+    margin: 0.24rem 0;
+    float: left;
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+    .footer-item i.icon {
+        width: 0.66666rem;
+        height: 0.6666rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+        .footer-item i.icon.pro {
+            background-image: url("../img/footer2.png");
+        }
+        .footer-item i.icon.pro1 {
+            background-image: url("../img/footer22.png");
+        }
+
+        .footer-item i.icon.order {
+            background-image: url("../img/footer1.png");
+        }
+        .footer-item i.icon.order1 {
+            background-image: url("../img/footer11.png");
+        }
+        .footer-item i.icon.audit {
+            background-image: url("../img/footer3.png");
+        }
+        .footer-item i.icon.audit1 {
+            background-image: url("../img/footer33.png");
+        }
+        .footer-item i.icon.per {
+            background-image: url("../img/footer4.png");
+        }
+        .footer-item i.icon.per1 {
+            background-image: url("../img/footer44.png");
+        }
+
+    .footer-item .name {
+        margin-top: 0.1rem;
+        font-size: 0.3rem;
+        color: #888;
+    }

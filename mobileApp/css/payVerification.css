@@ -1,0 +1,188 @@
+/*公共样式*/
+html, body {
+    background: #eee;
+}
+
+.mtb15 {
+    margin: 0.2rem 0 0.2rem 0;
+}
+/*头部样式*/
+.input-group input {
+    width: 98% !important;
+    margin-left: 1%;
+}
+
+.input-group-addon1 {
+    padding: 6px 9px !important;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #ccc !important;
+    border-radius: 50% !important;
+}
+
+.input-group input,
+.br10 {
+    border-radius: 10px !important;
+}
+/*中间内容*/
+.order-review {
+    margin: 0 0.13333rem;
+    border-radius: 0.33333rem;
+    margin-bottom: 0.2rem;
+    background: #fff;
+}
+
+    .order-review .order-title {
+        display: flex;
+        align-items: center;
+        padding: 0 0.66rem;
+        height: 0.853333rem;
+        font-size: 0.26666rem;
+        border-bottom: 1px solid #bfbfbf;
+    }
+
+    .order-review .check-input {
+        margin-top: -0.0033333rem;
+        margin-right: 0.166666rem;
+    }
+
+    .order-review .order-msg {
+        padding: 0.166666rem 0.7rem;
+    }
+
+    /*.order-review .name {
+        font-size: 0.26666rem;
+        color: #424242;
+    }*/
+
+    .order-review .introduce {
+        font-size: 0.16rem;
+        color: #bfbfbf;
+        margin: 0.13333rem 0;
+        padding-bottom: 0.13333rem;
+        border-bottom: 1px dashed #bfbfbf;
+    }
+
+    .order-review .shop-person {
+        font-size: 0.26666rem;
+        color: #424242;
+    }
+
+        .order-review .shop-person span, .order-review .shop-address span, .order-review .name span, .order-review .priceState span {
+            color: #bfbfbf;
+        }
+
+    .order-review .shop-address {
+        font-size: 0.26666rem;
+        color: #424242;
+        border-bottom: 1px dashed #bfbfbf;
+        margin: 0.13333rem 0;
+        padding-bottom: 0.13333rem;
+    }
+.numberRed {
+    color: #ff0000!important;
+    font-weight: bold;
+}
+.border_bot {
+    border-bottom: 1px dashed #bfbfbf;
+    font-size: 0.26666rem;
+    margin: 0.13333rem 0;
+    padding-bottom: 0.13333rem;
+}
+/*审核通过*/
+.approve {
+    height: 1.333rem;
+    width: 100%;
+    border-radius: 0.13333rem;
+    margin-bottom: 0.2rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.check-all {
+    padding: 0 0.46rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: #bfbfbf;
+}
+
+.approve-button, .approve-button:hover.approve-button:active, .approve-button:visited, .approve-button:link {
+    width: 3rem;
+    font-size: 0.4rem;
+    margin-right: 0.46rem;
+    height: 0.66666rem;
+    border-color: #ff0000 !important;
+    color: #ff0000 !important;
+    background: #fff !important;
+}
+
+
+.position-module {
+    width: 100%;
+    height: 3.3rem;
+    position: fixed;
+    bottom: 0;
+    background: #eee;
+}
+
+.footer-module1 {
+    width: 100%;
+    z-index: 99999;
+    background: #fff;
+    height: 1.5rem;
+}
+/*尾部*/
+.height15 {
+    height: 1.5rem;
+}
+
+.footer-module {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 99999;
+    background: #fff;
+    height: 1.5rem;
+}
+
+.footer-item {
+    margin: 0.16rem 0;
+    float: left;
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.footer-item i.icon {
+    width: 0.56rem;
+    height: 0.56rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.footer-item i.icon.pro {
+    background-image: url("../img/footer2.png");
+}
+
+.footer-item i.icon.order {
+    background-image: url("../img/footer1.png");
+}
+
+.footer-item i.icon.audit {
+    background-image: url("../img/footer3.png");
+}
+
+.footer-item i.icon.per {
+    background-image: url("../img/footer4.png");
+}
+
+.footer-item .name {
+margin-top: 0.26666rem;
+font-size: 0.266666rem;
+color: #888;
+}

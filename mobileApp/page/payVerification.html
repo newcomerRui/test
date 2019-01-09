@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>智能选机</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="../css/payVerification.css" rel="stylesheet" />
+    <script src="../js/flexible.js"></script>
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <style>
+        .tab {
+            width: 96%;
+            height: 0.699999rem;
+            margin: 0 0.333333rem 0.133333rem 0.233333rem;
+            border: 1px solid #ff0000;
+            border-radius: 0.433333rem;
+            background: #ffffff;
+        }
+            .tab li {
+                height: 0.679999rem;
+                line-height: 0.679999rem;
+                text-align: center;
+                font-size: 0.34rem;
+            }
+            .tab li:nth-child(1) {
+                border-right: 1px solid #ff0000;
+            }
+                .tab li.active {
+                    color:#ff0000;
+                }
+        .order-content {
+            display:none;
+        }
+        .order-content.active {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="input-group mtb15">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-menu-left"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="智能选机" id="txtSearch">
+                    <span class="input-group-addon input-group-addon1" id="btnSearCh">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <ul class="row tab">
+        <li class="col-xs-6 active">订单核销</li>
+        <li class="col-xs-6">付款明细</li>
+    </ul>
+    <div class="order-content active">
+        <div class="order-review mar-top20">
+            <p class="order-title" style="padding: 0 0.26rem;"><input type="checkbox" class="check-input">付款日期：2018年09月01日</p>
+            <div class="order-msg">
+                <p class="name"><label>付款方：</label><span>联想（北京）有限公司</span></p>
+                <p class="shop-person"><label>汇出行/账号：</label><span>招商银行/621 776555 7777 777</span></p>
+                <p class="shop-address"><label>付款方：</label><span>杭州乐嘉科技有限公司</span></p>
+                <p><label>付款金额：</label><span class="numberRed">￥120000</span></p>
+                <p class="shop-address"><label>采购金额：</label><span class="numberRed">￥10000</span>&nbsp;&nbsp;&nbsp;<label>订单状态：</label><span class="numberRed">未审核</span></p>
+                <p class="priceState"><label>备注信息：</label><span>正常对公转账</span></p>
+                <!--<div class="item-list">
+                    <p class="item"><label>付款金额：</label><span class="numberRed">￥120000</span></p>
+                    <p class="item"><label>采购金额：</label><span class="numberRed">￥10000</span><label>订单状态：</label><span class="numberRed">未审核</span></p>
+                    <p class="item"><label>备注信息：</label><span>正常对公转账</span></p>
+                </div>-->
+            </div>
+        </div>
+        <div class="position-module">
+            <div class="approve">
+                <div class="item">
+                    <p class="check-all"><input type="checkbox" class="check-all-input" style="margin-right: 0.066666rem;">全选</p>
+                </div>
+                <div class="item" style="margin-right: -1.8rem;"><p><label style="font-size:0.413333rem">合计：</label><span class="numberRed" style="font-size:0.413333rem">￥0</span></p></div>
+                <div class="item">
+                    <a href="confirmVerification.html"><button class="btn btn-xs btn-default approve-button">订单核销</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="order-content">
+        <div class="order-review mar-top20">
+            <p class="order-title">付款日期：2018年09月01日</p>
+            <div class="order-msg">
+                <p class="name"><label>付款方：</label><span>联想（北京）有限公司</span></p>
+                <p class="shop-person"><label>汇出行/账号：</label><span>招商银行/621 776555 7777 777</span></p>
+                <p class="shop-address"><label>付款方：</label><span>杭州乐嘉科技有限公司</span></p>
+                <p><label>付款金额：</label><span class="numberRed">￥120000</span></p>
+                <p class="border_bot"><label>采购金额：</label><span class="numberRed">￥10000</span>&nbsp;&nbsp;&nbsp;<label>订单状态：</label><span class="numberRed">未审核</span></p>
+                <p class="priceState"><label>备注信息：</label><span>正常对公转账</span></p>
+                <!--<div class="item-list">
+                    <p class="item"><label>付款金额：</label><span class="numberRed">￥120000</span></p>
+                    <p class="item"><label>采购金额：</label><span class="numberRed">￥10000</span><label>订单状态：</label><span class="numberRed">未审核</span></p>
+                    <p class="item"><label>备注信息：</label><span>正常对公转账</span></p>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="height15">
+    </div>
+    <div class="footer-module clearfix">
+        <a href="./workTable.html">
+            <div class="footer-item">
+                <i class="icon pro"></i>
+                <span class="name">工作台</span>
+            </div>
+        </a>
+        <a href="./protocol.html">
+            <div class="footer-item">
+                <i class="icon order"></i>
+                <span class="name">协议产品</span>
+            </div>
+        </a>
+        <a href="./order.html">
+            <div class="footer-item">
+                <i class="icon audit"></i>
+                <span class="name">订单</span>
+            </div>
+        </a>
+        <a href="./userMsg.html">
+            <div class="footer-item">
+                <i class="icon per"></i>
+                <span class="name">我</span>
+            </div>
+        </a>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            //Tab栏切换
+            $(".tab li").click(function () {
+                $(".tab li").eq($(this).index()).addClass("active").siblings().removeClass('active');
+                $(".order-content").removeClass('active').eq($(this).index()).addClass('active');
+            });
+        })
+    </script>
+</body>
+</html>

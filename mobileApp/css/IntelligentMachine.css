@@ -1,0 +1,165 @@
+/*公共样式*/
+html, body {
+    background: #eee;
+}
+.mtb15 {
+    margin: 0.2rem 0 0.2rem 0;
+}
+/*头部样式*/
+.input-group input{
+    width: 98%!important;
+    margin-left: 1%;
+}
+.input-group-addon1{
+    padding: 6px 9px !important;
+    background-color: #fff;
+    border: none;
+    border:1px solid #ccc!important;
+    border-radius:50%!important;
+}
+.input-group input,
+.br10{
+    border-radius: 10px!important;
+}
+/*中间内容*/
+.container-box {
+   padding: 0px 0.16rem 0px;
+}
+.container-title, .confirm-btn {
+    height: 0.666666rem;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0.2rem;
+    border-radius: 0.266666rem;
+    line-height: 0.666666rem;
+    text-align: center;
+    font-size: 0.373333rem;
+    font-weight: 700;
+}
+.b_red {
+    border: 1px solid #ffffff;
+    border-color: #ff0000;
+    color: #ff0000;
+}
+.use-items-box, .choose-items-box, .size-items-box, .property-items-box, .faced-items-box {
+    display: flex;
+    flex-flow: wrap;
+    align-items: stretch; /*项目在交叉轴上如何对齐如果项目未设置高度或设为auto，将占满整个容器的高度*/
+    /*justify-content: space-between;*/
+}
+.use-items-box .use-item,
+.choose-items-box .choose-item {
+    width: 48%;
+    height: 2rem;
+    margin-right: 2%;
+    margin-bottom: 0.2rem;
+    background: #fff;
+    border-radius: 0.266666rem;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: stretch;
+}
+    .use-items-box .use-item .use-name {
+        width:40%;
+        margin-left:0.32rem;
+        margin-top:0.32rem;
+        font-weight:600;
+    }
+    .use-items-box .use-item .use-img {
+        width:59%;
+        margin-right:1%;
+        height:2rem;
+    }
+    .choose-items-box .choose-item .choose-img {
+        width: 100%;
+        height: 2rem;
+    }
+    /*屏幕尺寸*/
+.container-title1 {
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 0.106666rem;
+    margin-top: 0.206666rem;
+}
+.container-title1 p {
+    height: 0.373333rem;
+    width: 100%;
+    padding: 0.133333rem 0 0.586666rem 0.2666666rem;
+    border-left: 3px solid #ff0000;
+}
+.size-items-box .size-item, .faced-items-box .faced-item {
+    width: 30%;
+    height: 0.64rem;
+    background: #fff;
+    text-align: center;
+    line-height: 0.64rem;
+    border-radius: 0.266666rem;
+    margin: 0.266666rem 3.333% 0 0;
+}
+
+/*性能要求*/
+.property-items-box .property-item {
+    width: 24%;
+    height: 0.64rem;
+    background: #fff;
+    text-align: center;
+    line-height: 0.64rem;
+    border-radius: 0.266666rem;
+    margin: 0.266666rem 1% 0 0;
+}
+/*外观要求*/
+/*确定按钮*/
+.confirm-btn {
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    margin-bottom: 1rem;
+    margin-top: 0.466666rem;
+}
+/*尾部*/
+.height15 {
+    height: 1.5rem;
+}
+.footer-module {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	z-index: 99999;
+	background: #fff;
+	height: 1.5rem;
+}
+.footer-item {
+	margin: 0.16rem 0;
+	float: left;
+	width: 25%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+}
+.footer-item i.icon {
+	width: 0.56rem;
+	height: 0.56rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.footer-item i.icon.pro {
+	background-image: url("../img/footer2.png");
+}
+
+.footer-item i.icon.order {
+	background-image: url("../img/footer1.png");
+}
+
+.footer-item i.icon.audit {
+	background-image: url("../img/footer3.png");
+}
+
+.footer-item i.icon.per {
+	background-image: url("../img/footer4.png");
+}
+
+.footer-item .name {
+	margin-top: 0.26666rem;
+	font-size: 0.266666rem;
+	color: #888;
+}

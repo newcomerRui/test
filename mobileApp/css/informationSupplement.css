@@ -1,0 +1,148 @@
+
+/*头部导航*/
+/*html, body {
+    background: #fff;
+}*/
+
+.header {
+    height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.customer {
+    width: 48%;
+    height: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.46rem;
+    border-bottom: 2px solid #fff;
+    /*display:none;*/
+}
+/*option {
+    background: #2d2a45 !important;
+}*/
+
+    .customer.active {
+        border-color: #f53d3d;
+        color: #f53d3d;
+    }
+
+/*完善信息*/
+.msg-module {
+    margin: 0.133333rem;
+    border-radius: 0.133333rem;
+    padding-top: 0.2rem;
+    background:#fff;
+    display:none;
+    height:90%;
+}
+.msg-module.active{
+    display:block;
+}
+
+.module-list {
+    padding-top: 0.346666rem;
+    border-bottom: 1px solid #dfdfdf;
+    padding-bottom: 10px;
+}
+
+.module-label {
+    display: inline-block;
+    width: 28%;
+    text-align: right;
+    font-size: 0.46666rem;
+    /*color: #f4f4f4 !important;*/
+}
+
+.textInput {
+    padding-left: 0.13333rem;
+    width: 68%;
+    display: inline-block;
+    font-size: 0.446666rem;
+    /*color: #fff !important;*/
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    border-color: #fff !important;
+    /*background-color: transparent;*/
+}
+/*::-webkit-input-placeholder { 
+    color: #fff !important;
+}
+
+:-moz-placeholder {
+    color: #fff !important;
+    opacity: 1;
+}
+
+::-moz-placeholder {
+    color: #fff !important;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { 
+    color: #fff !important;
+}*/
+
+    .textInput:focus {
+        outline: none !important;
+        border: none !important;
+        border-color: #fff !important;
+    }
+
+.selectInput {
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    width: 50%;
+    font-size: 0.446666rem;
+    border-color: #fff !important;
+}
+
+.item {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.approve-button {
+    height: 1rem;
+    width: 5rem;
+    border: 1px solid #e91716;
+    color: #fff;
+    background: #fff;
+    font-size: 0.4rem;
+    border-radius: 0.26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    background: #e91716;
+}
+
+    .approve-button:visited, .approve-button:hover, .approve-button.selected, .approve-button:link {
+        height: 1rem;
+        width: 5rem;
+        border: 1px solid #e91716;
+        color: #e91716;
+        background: #fff;
+        font-size: 0.4rem;
+        border-radius: 0.26rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+#SendPhoneCode {
+    margin-top: 0.5rem;
+    border: 1px solid #e91716;
+    width: 5rem;
+    height: 1rem;
+    background: #fff;
+    border-radius: 0.26rem;
+    color: #e91716;
+}

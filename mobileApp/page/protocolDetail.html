@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>协议产品详情</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/foot-head.css">
+    <link rel="stylesheet" href="../css/order.css">
+    <script src="../js/flexible.js"></script>
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="input-group mtb15">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-menu-left"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="产品详情">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="order_box">
+        <div class="box clearfix" style="height:9rem">
+            <div class="box-body lunbo">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="../img/z_detail.png" class="protocolDetailImg">
+                        </div>
+                        <div class="item">
+                            <img src="../img/mouse3.jpg" class="protocolDetailImg">
+                        </div>
+                        <div class="item">
+                            <img src="../img/comp1.jpg" class="protocolDetailImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box" style="padding:0.4rem 0px 0.16rem 0.32rem">
+            <h5 class="fw700">ThinkPad 全球购 联想ThinkPad T450</h5>
+            <h6 class="textColor with-border-dashed protocolDetailTitle">ThinkPad 全球购 联想ThinkPad T450 14英寸笔记本电脑</h6>
+            <div class="clearfix" style="padding-top:0.2rem">
+                <h4 class="redColor fl">￥ 3999</h4>
+                <div class="protocolDetail fr">
+                    <a class="footbtn">
+                        <button class="btn btn-xs btn-default">一键下单</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="containerl clearfix">
+                <ul class="containertable clearfix" id="myTab">
+                    <li class="tabControl active pull-left text-center"><h4>产品介绍</h4></li>
+                    <li class="tabControl pull-right text-center"><h4>规格参数</h4></li>
+                </ul>
+            </div>
+            <div class="tab-content" id="tabClass">
+                <!--第一个切换-->
+                <div id="introduce" class="proDescribe containerx clearfix tab-pane active">
+                    <img src="../img/prodetail.jpg" class="img-responsive">
+                </div>
+                <div id="configuration" class="containerx clearfix tab-pane">
+                    <div class="content Maincontent  bgWhite">
+                        <table class="table" border="1">
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    处理器
+                                </td>
+                                <td class="tdtwo">
+                                    Intel第七代标压高性能版处理器
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    操作系统
+                                </td>
+                                <td class="tdtwo">
+                                    Win 10 home+Office 2016
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    内存
+                                </td>
+                                <td class="tdtwo">
+                                    8G/16G DDR4
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    硬盘
+                                </td>
+                                <td class="tdtwo">
+                                    256G/512G/1TB PCI-E M.2 SSD
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    显卡
+                                </td>
+                                <td class="tdtwo">
+                                    Nvidia GeForce 1050Ti 2G/4GB 高性能独立显卡
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    音频
+                                </td>
+                                <td class="tdtwo">
+                                    JBL音箱+Dolby杜比全景声效系统
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    无线网卡
+                                </td>
+                                <td class="tdtwo">
+                                    @item.B2BVName
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    蓝牙
+                                </td>
+                                <td class="tdtwo">
+                                    @item.B2BVName
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    尺寸
+                                </td>
+                                <td class="tdtwo">
+                                    @item.B2BVName
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    重量
+                                </td>
+                                <td class="tdtwo">
+                                    @item.B2BVName
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    液晶屏
+                                </td>
+                                <td class="tdtwo">
+                                    @item.B2BVName
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    安全设备
+                                </td>
+                                <td class="tdtwo">
+                                    @item.B2BVName
+                                </td>
+                            </tr>
+                            <tr class="myTbody">
+                                <td class="tdone">
+                                    其他
+                                </td>
+                                <td class="tdtwo">
+                                    @item.B2BVName
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--尾部-->
+    <div class="height15">
+    </div>
+    <div class="footer-module clearfix">
+        <a href="./workTable.html">
+            <div class="footer-item">
+                <i class="icon pro"></i>
+                <span class="name">工作台</span>
+            </div>
+        </a>
+        <a href="./protocol.html">
+            <div class="footer-item">
+                <i class="icon order"></i>
+                <span class="name">协议产品</span>
+            </div>
+        </a>
+        <a href="./order.html">
+            <div class="footer-item">
+                <i class="icon audit"></i>
+                <span class="name">订单</span>
+            </div>
+        </a>
+        <a href="./userMsg.html">
+            <div class="footer-item">
+                <i class="icon per"></i>
+                <span class="name">我</span>
+            </div>
+        </a>
+    </div>
+    <script>
+        $(function () {
+            //Tab栏切换
+            $("#myTab li").click(function () {
+                $("#myTab li").eq($(this).index()).addClass("active").siblings().removeClass('active');
+                $("#tabClass .containerx").removeClass('active').eq($(this).index()).addClass('active');
+            });
+        });
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>

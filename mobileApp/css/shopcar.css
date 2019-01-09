@@ -1,0 +1,235 @@
+/*公共样式*/
+html, body {
+    background: #eee;
+    font-family: "Microsoft YaHei";
+}
+.mtb15{
+    margin: 0.2rem 0 0.2rem 0;
+}
+.ptbr{
+    padding: 0.2rem 0px 0.2rem 0.4rem;
+}
+.plr5{
+    padding: 0px 0.066666rem 0.066666rem;
+}
+.pl15{
+    padding-left: 0.2rem;
+}
+.pr15{
+    padding-right:0.2rem;
+}
+.pr30{
+    padding-right:0.4rem;
+}
+.pt15{
+    padding-top: 0.2rem;
+}
+.pb30{
+    padding-bottom:0.4rem;
+}
+.pl0{
+    padding-left:0px;
+}
+.mt5{
+    margin-top:0.066666rem;
+}
+.mb5{
+    margin-bottom:0.066666rem;
+}
+.m5{
+    margin: 0.066666rem;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.lh30{
+    line-height: 0.4rem;
+}
+.textColor{
+    color: #bfbfbf;
+}
+.redColor {
+    color: #ff0000;
+    font-size: 0.24rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.with-border{
+    border-bottom: 1px solid #F0EFED;
+}
+.with-border-dashed{
+    border-bottom: 1px dashed #bfbfbf;
+}
+.fw700{
+    font-weight: 700;
+}
+/*头部样式*/
+.input-group input{
+    width: 98%!important;
+    margin-left: 1%;
+}
+.input-group-addon1{
+    padding: 6px 9px !important;
+    background-color: #fff;
+    border: none;
+    border:1px solid #ccc!important;
+    border-radius:50%!important;
+}
+.input-group input,
+.br10{
+    border-radius: 10px!important;
+}
+.box{
+    position: relative;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #F0EFED;
+    padding:0.066666rem;
+    width: 100%;
+}
+.with-border{
+    border-bottom: 1px solid #F0EFED;
+}
+.footbox button{
+    border-color:#ff0000;
+    color: #ff0000;
+}
+.footbox{
+    width: 100%;
+    padding-top:0.133333rem;
+    padding-bottom:0.133333rem;
+    padding-right:0.32rem;
+    text-align: right;
+    border-top:1px solid #F0EFED;
+}
+.footbox button{
+    padding: 0px 0.133333rem;
+}
+/*主体样式*/
+.shopMain{
+    width: 94%;
+    background: #ffffff;
+    margin: 0 auto;
+    border-radius: 0.3rem;
+    color: #161616;
+}
+.shopNav{
+    font-size: 0.18rem;
+    height: 1rem;
+    line-height: 1rem;
+}
+.shopNav p{
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-bottom: 2px solid #eeeeee;
+}
+
+.xy_productList div,.jp_productList div{
+    height: 3.6rem;
+    border-bottom: 1px solid #eeeeee;
+}
+.jp_productList{
+    display: none;
+}
+.check{
+    float: left;
+    width: 0.6rem;
+    margin-top: 1.3rem;
+    margin-left: 0.4rem;
+    border: 1px solid #eee;
+    border-radius: 50%;
+}
+.check img{
+    width: 100%;
+}
+.productImg{
+    width: 3rem;
+    float: left;
+    height:100%;
+}
+.productImg img{
+    width: 100%;
+}
+.productName{
+    display: block;
+    margin-top: 0.4rem;
+    font-weight: bold;
+}
+.description{
+    color: #acacac;
+    /*height: 1.4rem;*/
+    display: block;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:3;   /*显示行数*/
+}
+.infor i{
+    float: left;
+    font-style: normal;
+    color: red;
+    margin-top: 0.2rem;
+}
+.infor p{
+    margin-top: 0.2rem;
+    float: right;
+    margin-right: 0.2rem;
+}
+.infor p b{
+    width: 0.7rem;
+    height: 0.7rem;
+    font-size: 0.6rem;
+    text-align: center;
+    line-height: 0.55rem;
+    display: inline-block;
+    border: 1px solid #eeeeee;
+}
+.infor p input{
+    width: 1rem;
+    height: 0.7rem;
+    vertical-align: top;
+    text-align: center;
+    margin: 0 0.1rem;
+    border: 1px solid #eee;
+}
+.focus{
+    border-bottom-color: #df2522 !important;
+}
+.total{
+    width: 100%;
+    height: 1.5rem;
+    color: #161616;
+    line-height: 1.5rem;
+    position: fixed;
+    bottom: 2rem;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+.total_check{
+    margin-top: 0.4rem;
+    line-height: 0;
+}
+.total span{
+    font-size: 0.5rem;
+}
+.total_money{
+    margin-left: 0.3rem;
+    font-weight: bold;
+}
+.accountBtn{
+    float: right;
+    width: 2rem;
+    background: #df2522;
+    text-align: center;
+    color: #ffffff;
+}

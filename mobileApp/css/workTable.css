@@ -1,0 +1,339 @@
+a {
+    color: #333 !important;
+    text-decoration: none !important;
+}
+
+/*轮播*/
+.carousel {
+    width: 100%;
+}
+
+/*入口模块*/
+.entrance-wrap {
+    position: relative;
+    z-index: 99;
+    margin-top: -0.2rem !important;
+    border-radius: 0.3rem;
+    padding-bottom: 0.42666rem;
+}
+
+.entrance-item {
+    margin-top: 0.6rem;
+    float: left;
+    width: 25%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+    .entrance-item i.icon {
+        width: 1.09333rem;
+        height: 0.93333rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+        .entrance-item i.icon.pro {
+            background-image: url("../img/14.png");
+        }
+
+        .entrance-item i.icon.order {
+            background-image: url("../img/11.png");
+        }
+
+        .entrance-item i.icon.audit {
+            background-image: url("../img/13.png");
+        }
+
+        .entrance-item i.icon.per {
+            background-image: url("../img/12.png");
+        }
+
+    .entrance-item .name {
+        margin-top: 0.26666rem;
+        font-size: 0.346666rem;
+    }
+
+/*公司信息*/
+.company-msg {
+    margin: 0.213333rem 0.133333rem 0;
+    display: flex;
+    height: 0.93333rem;
+    align-items: center;
+    padding: 0 0.26666rem;
+    border-radius: 0.133333rem;
+}
+
+    .company-msg .name {
+        font-size: 0.32rem;
+        margin-right: 0.13333rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .company-msg .attestation {
+        flex-shrink: 0;
+        font-style: normal;
+        font-size: 0.16rem;
+        padding: 0.05333rem 0.093333rem;
+        border: 1px solid #fe0000;
+        border-radius: 0.133333rem;
+        color: #fe0000;
+    }
+
+/*.company-right {*/
+/*display: flex;*/
+/*flex-shrink: 0;*/
+/*font-size: 0.16rem;*/
+/*}*/
+
+/*.company-right .item {*/
+/*margin-right: 0.293333rem;*/
+/*}*/
+
+/*.company-right .item i.icon {*/
+/*width: 0.266666rem;*/
+/*height: 0.266666rem;*/
+/*display: inline-block;*/
+/*background-position: center;*/
+/*background-repeat: no-repeat;*/
+/*background-size: contain;*/
+/*}*/
+
+/*.company-right .item i.icon.shop {*/
+/*background-image: url("../img/company.jpg");*/
+/*}*/
+
+/*.company-right .item i.icon.account {*/
+/*background-image: url("../img/admin.jpg");*/
+/*}*/
+
+/*.company-right .item i.icon.company {*/
+/*background-image: url("../img/person.jpg");*/
+/*}*/
+/*模块名称*/
+.module-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 0.4rem;
+    text-align: center;
+    height: 0.933rem;
+    letter-spacing: 0.13333rem;
+    justify-content: center;
+}
+/*客户经理*/
+.customer-manager {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 0.133333rem;
+    border-radius: 0.133333rem;
+    height: 2.26666rem;
+}
+
+.manager-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-left: 0.4rem;
+}
+
+.customer-manager .item-img {
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.2rem;
+}
+
+.customer-manager .position {
+    font-size: 0.34666rem;
+    color: #444;
+}
+
+.customer-manager .name {
+    font-size: 0.32rem;
+    color: #888;
+}
+/*待办事宜*/
+.todo-list {
+    display: flex;
+    margin: 0 0.13333rem;
+    justify-content: space-around;
+}
+
+    .todo-list .todo-item {
+        padding: 0.46666rem 0;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 2.29333rem;
+        border-radius: 0.13333rem;
+        justify-content: center;
+    }
+
+.todo-item .todo-title {
+    font-size: 0.22666rem;
+    color: #424242;
+}
+
+.todo-item .todo-num {
+    padding: 0.4rem 0;
+}
+
+.todo-item .todo-button {
+    border: 1px solid #ccc;
+    padding: 0.0266666rem 0.1333333rem;
+    border-radius: 0.266666rem;
+}
+
+.todo-item .order-num {
+    font-size: 0.53333rem;
+    color: #ff0000;
+}
+/*协议产品*/
+.agreement-product {
+    display: flex;
+    margin: 0 0.13333rem;
+    flex-wrap: wrap;
+    border-radius: 0.13333rem;
+}
+
+    .agreement-product .agreement-list {
+        width: 50%;
+    }
+
+.agreement-list .module-img {
+    width: 100%;
+    height: 3.46666rem;
+}
+
+.agreement-list .name {
+    padding-top:0.13333rem;
+    font-size: 0.346666rem;
+    color: #424242;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.agreement-list .introduce {
+    font-size: 0.213333rem;
+    color: #999;
+    padding-top: 0.133333rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.agreement-list .price {
+    text-align: right;
+    font-size: 0.4rem;
+    color: #ff0000;
+    padding-top: 0.133333rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.agreement-list .product-list {
+    padding-top: 0.346666rem;
+    display: flex;
+    justify-content: center;
+}
+
+.agreement-list:nth-child(3) {
+    border-right: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.agreement-list:nth-child(4) {
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.agreement-list:nth-child(5) {
+    border-right: 1px solid #dfdfdf;
+}
+
+.product-list .product-img {
+    width: 4rem;
+    height: 2.93333rem;
+}
+/*我的订单*/
+.my-order {
+    margin: 0 0.13333rem;
+    border-radius: 0.13333rem;
+    margin-bottom: 0.4rem;
+}
+
+    .my-order .order-title {
+        display: flex;
+        align-items: center;
+        padding: 0 0.46rem;
+        height: 0.853333rem;
+        font-size: 0.26666rem;
+    }
+
+    .my-order .order-list {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 0.4rem;
+    }
+
+    .my-order .order-img {
+        width: 2rem;
+        /*height: 2rem;*/
+        margin-right: 0.4rem;
+    }
+
+    .my-order .name {
+        font-size: 0.26666rem;
+        color: #424242;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .my-order .introduce {
+        width: 100%;
+        font-size: 0.16rem;
+        color: #bfbfbf;
+        margin: 0.13333rem 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .my-order .number {
+        font-size: 0.29333rem;
+        color: #424242;
+        width: 100%;
+    }
+
+    .my-order .numberRed {
+        color: #ff0000;
+    }
+
+    .my-order .price {
+        width: 100%;
+        margin-top: 0.133333rem;
+        padding-top: 0.2rem;
+        text-align: right;
+        border-top: 1px dashed #bfbfbf;
+        font-size: 0.4rem;
+        color: #ff0000;        
+    }
+
+.button-box {
+    height: 1.2rem;
+}
+
+    .button-box button, .button-box button:hover.button-box button:active, .button-box button:visited, .button-box button:link {
+        margin: 0.25rem 0.25rem 0 0;
+        height: 0.66666rem;
+        border-color: #ff0000 !important;
+        color: #ff0000 !important;
+        background: #fff !important;
+    }

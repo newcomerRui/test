@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>智能选机</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link href="../css/IntelligentMachine.css" rel="stylesheet" />
+    <script src="../js/flexible.js"></script>
+    <script src="../js/jquery-1.9.1.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="input-group mtb15">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-menu-left"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="智能选机" id="txtSearch">
+                    <span class="input-group-addon input-group-addon1" id="btnSearCh">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-box">
+        <!-- 使用场景 -->
+        <div class="container-title">使用场景</div>
+        <div class="use-items-box">
+            <div class="use-item">
+                <p class="use-name">文案处理</p>
+                <img class="use-img" src="../img/21.jpg" />
+            </div>
+            <div class="use-item">
+                <p class="use-name">商务演示</p>
+                <img class="use-img" src="../img/22.jpg" />
+            </div>
+            <div class="use-item">
+                <p class="use-name">设计</p>
+                <img class="use-img" src="../img/23.jpg" />
+            </div>
+            <div class="use-item">
+                <p class="use-name">IT开发</p>
+                <img class="use-img" src="../img/25.jpg" />
+            </div>
+            <div class="use-item">
+                <p class="use-name">税控机</p>
+                <img class="use-img" src="../img/27.jpg" />
+            </div>
+            <div class="use-item">
+                <p class="use-name">工控机</p>
+                <img class="use-img" src="../img/28.jpg" />
+            </div>
+        </div>
+
+        <!--选购机型-->
+        <div class="container-title">选购机型</div>
+        <div class="choose-items-box">
+            <div class="choose-item">
+                <img class="choose-img" src="../img/work1.png" />
+            </div>
+            <div class="choose-item">
+                <img class="choose-img" src="../img/work2.png" />
+            </div>
+            <div class="choose-item">
+                <img class="choose-img" src="../img/work3.png" />
+            </div>
+            <div class="choose-item">
+                <img class="choose-img" src="../img/work4.png" />
+            </div>
+        </div>
+
+        <!--屏幕尺寸-->
+        <div class="container-title1"><p>屏幕尺寸</p></div>
+        <div class="size-items-box">
+            <div class="size-item">11.6英寸</div>
+            <div class="size-item">12.5英寸</div>
+            <div class="size-item">13.3英寸</div>
+            <div class="size-item">14.0英寸</div>
+            <div class="size-item">15.6英寸</div>
+            <div class="size-item">17.3英寸</div>
+        </div>
+        <!-- 性能要求 -->
+        <div class="container-title1"><p>性能要求</p></div>
+        <div class="property-items-box">
+            <div class="property-item">急速型</div>
+            <div class="property-item">性价比</div>
+            <div class="property-item">大容量</div>
+            <div class="property-item">长待机</div>
+        </div>
+        <!-- 外观要求 -->
+        <div class="container-title1"><p>外观要求</p></div>
+        <div class="faced-items-box">
+            <div class="faced-item">触摸屏</div>
+            <div class="faced-item">旋转屏</div>
+            <div class="faced-item">背光键盘</div>
+            <div class="faced-item">指纹识别</div>
+            <div class="faced-item">超薄&窄边框</div>
+            <div class="faced-item">微型机箱/一体机</div>
+        </div>
+        <div class="confirm-btn">确定</div>
+    </div>
+    <!--尾部-->
+    <div class="height15">
+    </div>
+    <div class="footer-module clearfix">
+        <a href="./workTable.html">
+            <div class="footer-item">
+                <i class="icon pro"></i>
+                <span class="name">工作台</span>
+            </div>
+        </a>
+        <a href="./protocol.html">
+            <div class="footer-item">
+                <i class="icon order"></i>
+                <span class="name">协议产品</span>
+            </div>
+        </a>
+        <a href="./order.html">
+            <div class="footer-item">
+                <i class="icon audit"></i>
+                <span class="name">订单</span>
+            </div>
+        </a>
+        <a href="./userMsg.html">
+            <div class="footer-item">
+                <i class="icon per"></i>
+                <span class="name">我</span>
+            </div>
+        </a>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.size-item,.property-item,.faced-item').click(function () {
+                if ($(this).hasClass("b_red")) {
+                    $(this).removeClass("b_red");
+                } else {
+                    $(this).addClass("b_red");
+                }
+            })
+        })
+    </script>
+</body>
+</html>

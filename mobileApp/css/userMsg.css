@@ -1,0 +1,56 @@
+/*用户信息*/
+.msg-module{
+    padding-bottom: 0.4rem;   
+    margin: 0.213333rem 0.133333rem 0;
+    border-radius: 0.133333rem;
+    padding-bottom:1.2rem;
+}
+.module-title {
+    background: #fff;
+    font-size: 0.46666rem;
+    height: 1.4rem;
+    display: flex;
+    align-items: center;
+    /*border-bottom: 1px solid #bfbfbf;*/
+    padding-left: 0.72rem;
+    margin-bottom:0.1333rem;
+}
+.module-list {
+    background: #fff;
+    padding-left: 0.72rem;
+    padding-right: 0.72rem;
+}
+.module-label {
+    font-size: 0.36666rem;
+    padding: 0.266666rem 0;
+    color: #888;
+    border-bottom: 1px solid #d9d9d9;
+}
+    .module-label .spanL {  
+        font-weight:500;
+        color: #000;
+        float:left;
+    }
+    .module-label .spanR {
+        
+        float: right;
+        word-break: break-all;
+        word-wrap: break-word;
+    }
+.textInput {
+    width: 70%;
+    display: inline-block;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none !important;
+    border-bottom: 1px dashed #888 !important;
+    font-size: 0.346666rem;
+    color: #888;
+}
+.textInput:focus{
+    outline: none !important;
+    border: none !important;
+    border-bottom: 1px dashed #888 !important
+}
+
+

@@ -1,0 +1,125 @@
+
+
+.mar-top20{
+    margin-top:0.2rem !important;
+}
+
+/*订单审核*/
+
+.order-review{
+    margin:0 0.13333rem;
+    border-radius: 0.13333rem;
+    margin-bottom:20px;
+    background: #fff;
+}
+    .order-review .order-title {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        height: 0.853333rem;
+        font-size: 0.32rem;
+        border-bottom: 1px solid #F0EFED;       
+        padding: 8px;     
+    }
+    .order-review .check-input {
+        margin-top: 2px;
+        margin-right: 0.066666rem;
+    }
+.order-review .order-msg{
+    padding:8px;
+}
+    .order-review .name {
+        font-size: 0.26666rem;
+        color: #424242;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+.discrip {
+    color: #bfbfbf;
+    font-size: 0.266666rem;
+    margin: 0.13333rem 0;
+}
+.order-review .introduce{
+    font-size: 0.16rem;
+    color:#bfbfbf;
+    margin:0.13333rem 0;
+    padding-bottom:0.13333rem;
+    border-bottom: 1px dashed #bfbfbf;
+}
+.order-review .shop-person{
+    font-size: 0.26666rem;
+    color:#424242;
+}
+.order-review .shop-person span,.order-review .shop-address span{
+    color:#bfbfbf;
+}
+.order-review .shop-address{
+    font-size: 0.26666rem;
+    color:#424242;
+}
+.item-list{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.item-list .item{
+    margin-right: 0.48rem;
+}
+ .numberRed{
+    color:#ff0000;   
+}
+/*尾部*/
+.height15{
+    height:1.5rem;
+}
+.height31 {
+    height: 4rem;
+}
+/*审核通过*/
+.approve{
+    height: 1.333rem;
+    width:100%;
+    border-radius: 0.13333rem;
+    margin-bottom:0.2rem;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.check-all{
+    padding:0 0.46rem;
+    font-size: 0.4rem;
+    font-weight: bold;
+    color:#bfbfbf;
+}
+
+.approve-button, .approve-button:hover.approve-button:active, .approve-button:visited, .approve-button:link {
+    font-size: 12px;
+    margin-right: 0.46rem;   
+    border:1px solid #ff0000 !important;
+    color: #343434 !important;
+    background: #fff !important;
+    padding: 0.133333rem 0.233333rem;
+    border-radius: 10px;
+}
+
+
+.position-module{
+    width: 100%;
+    height:3.7rem;
+    position: fixed;
+    bottom:0;
+    background: #eee;
+}
+.footer-module1 {
+    width: 100%;
+    z-index:99999;
+    background: #fff;
+    height:1.5rem;
+}
+
+
+
+

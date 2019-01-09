@@ -1,0 +1,187 @@
+/*公共样式*/
+html, body {
+    background: #eee;
+}
+.mtb15{
+    margin: 0.2rem 0 0.2rem 0;
+}
+.ptbr{
+    padding: 0.2rem 0px 0.2rem 0.4rem;
+}
+.plr5{
+    padding: 0px 0.066666rem 0.066666rem;
+}
+.pl15{
+    padding-left: 0.2rem;
+}
+.pr15{
+    padding-right:0.2rem;
+}
+.pr30{
+    padding-right:0.4rem;
+}
+.pt15{
+    padding-top: 0.2rem;
+}
+.pb30{
+    padding-bottom:0.4rem;
+}
+.pl0{
+    padding-left:0px;
+}
+.mt5{
+    margin-top:0.066666rem;
+}
+.mb5{
+    margin-bottom:0.066666rem;
+}
+.m5{
+    margin: 0.066666rem;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.lh30{
+    line-height: 0.4rem;
+}
+
+.redColor {
+    color: #ff0000;
+    font-size: 0.24rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/*头部样式*/
+.input-group input{
+    width: 98%!important;
+    margin-left: 1%;
+}
+.input-group-addon1{
+    padding: 6px 9px !important;
+    background-color: #fff;
+    border: none;
+    border:1px solid #ccc!important;
+    border-radius:50%!important;
+}
+.input-group input,
+.br10{
+    border-radius: 10px!important;
+}
+.box{
+    position: relative;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #F0EFED;
+    padding:0.066666rem;
+    width: 100%;
+}
+
+
+.order_box{
+    padding:0px 0.16rem 0px;
+}
+.order_boxContent{
+    margin-bottom: 0.333333rem;
+}
+.order_listContent{
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top:0.346666rem;
+}
+.orderImg{
+    width:100%;
+    /*height:2.666666rem;*/
+    padding-right: 0.266666rem;
+}
+.order-itemContent {
+    width: 6.573333rem;
+    padding-right: 0.5rem;
+}
+
+
+.proName {
+    word-break: break-all;
+    word-wrap: break-word;
+    padding-bottom: 0.1333rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size:0.4rem;
+}
+.proIntroduce {
+    font-size: 0.13333rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #8d8d8d;
+    border-bottom: 1px solid #F0EFED;
+    padding-bottom: 0.1333rem;
+    margin-bottom: 0.1333rem;
+}
+
+    .proPrice {
+        margin: 0.026666rem 0.066666rem 0px 0px;
+        text-align: right;
+        padding-right: 0.32rem;
+        font-size: 0.4rem;
+        color: #ff0000;
+        font-weight: bold;
+    }
+/*协议详情*/
+.lunbo{
+    padding: 0.133333rem 0.666666rem;
+}
+.carousel-indicators li{
+    border: 1px solid #949494;
+}
+.carousel-indicators li.active{
+    background-color:#949494;
+}
+.containertable{
+    border-bottom:1px solid #F0EFED;
+}
+.containertable .tabControl.active{
+    color:#ff0000;
+}
+.containertable li{
+    padding:0.133333rem 0px;
+}
+.containertable li:nth-child(1){
+    border-right:1px solid #F0EFED;
+    width:50%;
+}
+.containertable li:nth-child(2){
+    width:50%;
+}
+.tab-content .proDescribe{
+    padding-top:0.133333rem;
+}
+.table tr:nth-child(1) td{
+    border-top:none;
+}
+.table tr td:nth-child(1){
+    text-align:right;
+}
+.protocolDetailTitle{
+    padding: 0.133333rem 0px;
+}
+.protocolDetail{
+    padding-bottom:0.133333rem;
+    padding-right:0.32rem;
+    text-align: right;
+}
+.protocolDetail button{
+    padding: 0px 0.133333rem;
+    border-color:#ff0000;
+    color: #ff0000;
+}
+/*尾部*/
+.height15 {
+	height: 2rem;
+}
