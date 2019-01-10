@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="select-module selectmodule">
+        <div class="select-div selectdiv"></div>
+        <ul class="item-ul">
+                <li class="item-li">
+                    <div>
+                        <span class="item-icon">可选</span>
+                        <span>@Model.BindServicesODProductList[h][r].ProductName</span>
+                        <span>￥@Model.BindServicesODProductList[h][r].Price</span>
+                        <div class="fl ml10 servicesP" id="@Model.BindServicesODProductList[h][r].BOMCode" style="display:none;">
+                            <span class="mt5 firstSpan" title="@Model.BindServicesODProductList[h][r].ProductName" style="height:34px;width:200px;line-height:34px;display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;">
+                                <input type="checkbox" style="display:none;" name="chkQuantityBind2" id="chkQuantityBind2" sign="selStdChanne@(h)" value="@Model.BindServicesODProductList[h][r].B2BProductID - @Model.BindServicesODProductList[h][r].ProductType - @Model.BindServicesODProductList[h][r].Price - @Model.BindServicesODProductList[h][r].PhID-@Model.BindServicesODProductList[h][r].MainBindAmount-@Model.BindServicesODProductList[h][r].ODBindAmount" class="chkQuantityBind chkQuantityBind2" price="@Model.BindServicesODProductList[h][r].Price" stocknumber="@Model.BindServicesODProductList[h][r].StockNumber" agentprice="@Model.BindServicesODProductList[h][r].AgentPrice" />
+                                <input type="hidden" class="mainbindamount" value="@Model.BindServicesODProductList[h][r].MainBindAmount" />
+                                <input type="hidden" class="odbindamount" value="@Model.BindServicesODProductList[h][r].ODBindAmount" />
+                                <input type="hidden" class="willbuyacount" value="0" />
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-li">
+                    <div>
+                        <span class="item-icon">可选</span>
+                        <span>@Model.BindServicesODProductList[h][r].ProductName</span>
+                        <span>￥@Model.BindServicesODProductList[h][r].Price</span>
+                        <div class="fl ml10 servicesP" id="@Model.BindServicesODProductList[h][r].BOMCode" style="display:none;">
+                            <span class="mt5 firstSpan" title="@Model.BindServicesODProductList[h][r].ProductName" style="height:34px;width:200px;line-height:34px;display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;">
+                                <input type="checkbox" style="display:none;" name="chkQuantityBind2" id="chkQuantityBind2" sign="selStdChanne@(h)" value="@Model.BindServicesODProductList[h][r].B2BProductID - @Model.BindServicesODProductList[h][r].ProductType - @Model.BindServicesODProductList[h][r].Price - @Model.BindServicesODProductList[h][r].PhID-@Model.BindServicesODProductList[h][r].MainBindAmount-@Model.BindServicesODProductList[h][r].ODBindAmount" class="chkQuantityBind chkQuantityBind2" price="@Model.BindServicesODProductList[h][r].Price" stocknumber="@Model.BindServicesODProductList[h][r].StockNumber" agentprice="@Model.BindServicesODProductList[h][r].AgentPrice" />
+                                <input type="hidden" class="mainbindamount" value="@Model.BindServicesODProductList[h][r].MainBindAmount" />
+                                <input type="hidden" class="odbindamount" value="@Model.BindServicesODProductList[h][r].ODBindAmount" />
+                                <input type="hidden" class="willbuyacount" value="0" />
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-li">
+                    <div>
+                        <span class="item-icon">可选</span>
+                        <span>@Model.BindServicesODProductList[h][r].ProductName</span>
+                        <span>￥@Model.BindServicesODProductList[h][r].Price</span>
+                        <div class="fl ml10 servicesP" id="@Model.BindServicesODProductList[h][r].BOMCode" style="display:none;">
+                            <span class="mt5 firstSpan" title="@Model.BindServicesODProductList[h][r].ProductName" style="height:34px;width:200px;line-height:34px;display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;">
+                                <input type="checkbox" style="display:none;" name="chkQuantityBind2" id="chkQuantityBind2" sign="selStdChanne@(h)" value="@Model.BindServicesODProductList[h][r].B2BProductID - @Model.BindServicesODProductList[h][r].ProductType - @Model.BindServicesODProductList[h][r].Price - @Model.BindServicesODProductList[h][r].PhID-@Model.BindServicesODProductList[h][r].MainBindAmount-@Model.BindServicesODProductList[h][r].ODBindAmount" class="chkQuantityBind chkQuantityBind2" price="@Model.BindServicesODProductList[h][r].Price" stocknumber="@Model.BindServicesODProductList[h][r].StockNumber" agentprice="@Model.BindServicesODProductList[h][r].AgentPrice" />
+                                <input type="hidden" class="mainbindamount" value="@Model.BindServicesODProductList[h][r].MainBindAmount" />
+                                <input type="hidden" class="odbindamount" value="@Model.BindServicesODProductList[h][r].ODBindAmount" />
+                                <input type="hidden" class="willbuyacount" value="0" />
+                            </span>
+                        </div>
+                    </div>
+                </li>
+        </ul>
+    </div>
+</body>
+<script>
+ $('.serviceBox .servicesR').click(function () {
+        console.dir($(this).children(".servicesP").find('.firstSpan').children("#chkQuantityBind1"));
+        $(this).children("#chkQuantityBind1").prop('checked',true);
+        $(this).children(".servicesP").find('.firstSpan').children(".chkQuantityBind1").prop('checked',true)
+
+        $(this).children('.servicesP').children('.firstSpan').find("input").eq(0).change(function () {//选择按量绑定产品,计算总价
+
+        });
+        if ($(this).hasClass("br")) {
+           $(this).children('.servicesP').children('.firstSpan').find("input").eq(0).removeAttr("checked", 'checked');
+           $(this).removeClass("br");
+          stockCheckAndSumPrice(tfQuantity);
+        } else {
+           
+           $(this).children(".servicesP").find('.firstSpan').children(".chkQuantityBind2").prop('checked', true)
+           $(this).addClass("br");
+           stockCheckAndSumPrice(tfQuantity);
+        }
+    })
+    $('.serviceBox .servicesK').click(function () {
+       var select = $(this).find(".select").context.value;
+       var name = $(this).find(".select").context.name;
+       $("input[sign='" + name + "']").each(function (i) {
+           $(this).removeAttr("checked", 'checked');
+       });
+       if ($(this).hasClass("br")) {
+           $("#" + select).children('.firstSpan').find("input").eq(0).removeAttr("checked", 'checked');
+           $(this).removeClass("br");
+           stockCheckAndSumPrice(tfQuantity);
+       } else {
+           //$(this).children('.servicesP').children('.firstSpan').find('input').eq(0).attr("checked");
+           $("#" + select).find('.firstSpan').children(".chkQuantityBind2").prop('checked', true)
+           $(this).addClass("br");
+           stockCheckAndSumPrice(tfQuantity);
+       }
+    });
+
+</script>
+
+
+
+
+
+</html>
