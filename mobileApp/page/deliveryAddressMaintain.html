@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="../weUI/lib/weui.css">
     <link rel="stylesheet" href="../weUI/css/jquery-weui.css">
     <style>
-        lable{
-            font-weight:500;
+        html,body{
+            background:#fff;
+        }
+        .moduleFooter{
+            background:#fff;
+        }
+        .addressModule {
+            margin: 1.2rem 0.2666rem 2rem;
+        }
+        lable {
+            font-weight: 500;
         }
         .weui-label{
             font-size:0.3rem;
@@ -27,6 +36,7 @@
         .weui-check_label{
             font-size:0.4rem;
         }
+        
     </style>
     <script src="../js/flexible.js"></script>
     <script src="../js/jquery-1.9.1.js"></script>
@@ -42,9 +52,25 @@
 <body ontouchstart>
     <div class="moduleHeader">
         <p class="iCone" onclick="window.history.back()"><i class="glyphicon glyphicon-menu-left "></i></p>
-        <p class="moduleTitle">收货地址维护</p>
+        <p class="moduleTitle"><!--收货地址维护--></p>
         <p class="iCone delBtn" onclick="window.history.back()">删除</p>
     </div>
+    <!--<div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="input-group mtb15">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-menu-left"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                </div>
+            </div>
+        </header>
+    </div>-->
+
     <div class="container">
         <div class="addressModule">
             <div class="weui-cells weui-cells_form">
@@ -92,10 +118,10 @@
                 </div>
             </div>
         </div>
-            <div class="moduleFooter">
-                <div class="addBtn" onclick="window.history.back()">保存</div>
-            </div>
-        
+        <div class="moduleFooter">
+            <div class="addBtn" onclick="window.history.back()">保存</div>
+        </div>
+
     </div>
     <script>
         $(function () {
@@ -112,9 +138,9 @@
             var pageType = GetQueryString('type');
             if (pageType == 'add') {
                 $('.delBtn').hide();
-                $('.moduleTitle').text("新建收货地址");
+                //$('.moduleTitle').text("新建收货地址");
             } else if (pageType == 'edit') {
-                $('.moduleTitle').text("编辑收货地址");
+                //$('.moduleTitle').text("编辑收货地址");
             }
         });
         $("#province").select({
@@ -159,7 +185,7 @@
                 }
             ]
         });
-       
+
     </script>
 </body>
 </html>

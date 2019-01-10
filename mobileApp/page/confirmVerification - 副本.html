@@ -2,90 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>智能选机</title>
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link href="../css/payVerification.css" rel="stylesheet" />
-    <script src="../js/flexible.js"></script>
-    <script src="../js/jquery-1.9.1.js"></script>
-    <script src="../bootstrap/js/bootstrap.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <header class="row">
-            <div class="col-xs-12">
-                <div class="input-group mtb15">
-                    <span class="input-group-addon input-group-addon1">
-                        <i class="glyphicon glyphicon-menu-left"></i>
-                    </span>
-                    <input type="text" class="form-control" placeholder="智能选机" id="txtSearch">
-                    <span class="input-group-addon input-group-addon1" id="btnSearCh">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </span>
-                </div>
-            </div>
-        </header>
+    <div class="select-module selectmodule">
+        <div class="select-div selectdiv"></div>
+        <ul class="item-ul">
+                <li class="item-li">
+                    <div>
+                        <span class="item-icon">可选</span>
+                        <span>@Model.BindServicesODProductList[h][r].ProductName</span>
+                        <span>￥@Model.BindServicesODProductList[h][r].Price</span>
+                        <div class="fl ml10 servicesP" id="@Model.BindServicesODProductList[h][r].BOMCode" style="display:none;">
+                            <span class="mt5 firstSpan" title="@Model.BindServicesODProductList[h][r].ProductName" style="height:34px;width:200px;line-height:34px;display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;">
+                                <input type="checkbox" style="display:none;" name="chkQuantityBind2" id="chkQuantityBind2" sign="selStdChanne@(h)" value="@Model.BindServicesODProductList[h][r].B2BProductID - @Model.BindServicesODProductList[h][r].ProductType - @Model.BindServicesODProductList[h][r].Price - @Model.BindServicesODProductList[h][r].PhID-@Model.BindServicesODProductList[h][r].MainBindAmount-@Model.BindServicesODProductList[h][r].ODBindAmount" class="chkQuantityBind chkQuantityBind2" price="@Model.BindServicesODProductList[h][r].Price" stocknumber="@Model.BindServicesODProductList[h][r].StockNumber" agentprice="@Model.BindServicesODProductList[h][r].AgentPrice" />
+                                <input type="hidden" class="mainbindamount" value="@Model.BindServicesODProductList[h][r].MainBindAmount" />
+                                <input type="hidden" class="odbindamount" value="@Model.BindServicesODProductList[h][r].ODBindAmount" />
+                                <input type="hidden" class="willbuyacount" value="0" />
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-li">
+                    <div>
+                        <span class="item-icon">可选</span>
+                        <span>@Model.BindServicesODProductList[h][r].ProductName</span>
+                        <span>￥@Model.BindServicesODProductList[h][r].Price</span>
+                        <div class="fl ml10 servicesP" id="@Model.BindServicesODProductList[h][r].BOMCode" style="display:none;">
+                            <span class="mt5 firstSpan" title="@Model.BindServicesODProductList[h][r].ProductName" style="height:34px;width:200px;line-height:34px;display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;">
+                                <input type="checkbox" style="display:none;" name="chkQuantityBind2" id="chkQuantityBind2" sign="selStdChanne@(h)" value="@Model.BindServicesODProductList[h][r].B2BProductID - @Model.BindServicesODProductList[h][r].ProductType - @Model.BindServicesODProductList[h][r].Price - @Model.BindServicesODProductList[h][r].PhID-@Model.BindServicesODProductList[h][r].MainBindAmount-@Model.BindServicesODProductList[h][r].ODBindAmount" class="chkQuantityBind chkQuantityBind2" price="@Model.BindServicesODProductList[h][r].Price" stocknumber="@Model.BindServicesODProductList[h][r].StockNumber" agentprice="@Model.BindServicesODProductList[h][r].AgentPrice" />
+                                <input type="hidden" class="mainbindamount" value="@Model.BindServicesODProductList[h][r].MainBindAmount" />
+                                <input type="hidden" class="odbindamount" value="@Model.BindServicesODProductList[h][r].ODBindAmount" />
+                                <input type="hidden" class="willbuyacount" value="0" />
+                            </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-li">
+                    <div>
+                        <span class="item-icon">可选</span>
+                        <span>@Model.BindServicesODProductList[h][r].ProductName</span>
+                        <span>￥@Model.BindServicesODProductList[h][r].Price</span>
+                        <div class="fl ml10 servicesP" id="@Model.BindServicesODProductList[h][r].BOMCode" style="display:none;">
+                            <span class="mt5 firstSpan" title="@Model.BindServicesODProductList[h][r].ProductName" style="height:34px;width:200px;line-height:34px;display:inline-block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:left;">
+                                <input type="checkbox" style="display:none;" name="chkQuantityBind2" id="chkQuantityBind2" sign="selStdChanne@(h)" value="@Model.BindServicesODProductList[h][r].B2BProductID - @Model.BindServicesODProductList[h][r].ProductType - @Model.BindServicesODProductList[h][r].Price - @Model.BindServicesODProductList[h][r].PhID-@Model.BindServicesODProductList[h][r].MainBindAmount-@Model.BindServicesODProductList[h][r].ODBindAmount" class="chkQuantityBind chkQuantityBind2" price="@Model.BindServicesODProductList[h][r].Price" stocknumber="@Model.BindServicesODProductList[h][r].StockNumber" agentprice="@Model.BindServicesODProductList[h][r].AgentPrice" />
+                                <input type="hidden" class="mainbindamount" value="@Model.BindServicesODProductList[h][r].MainBindAmount" />
+                                <input type="hidden" class="odbindamount" value="@Model.BindServicesODProductList[h][r].ODBindAmount" />
+                                <input type="hidden" class="willbuyacount" value="0" />
+                            </span>
+                        </div>
+                    </div>
+                </li>
+        </ul>
     </div>
-
-    <div class="order-content">
-        <div class="order-review mar-top20">
-            <p class="order-title" style="padding: 0 0.26rem;"><input type="checkbox" class="check-input"><span>付款日期：2018年09月01日</span><span>下单时间：2018-07-24</span></p>
-            <div class="order-msg">
-                <p class="name"><label>PO号：</label><span>B20180724007x</span></p>
-                <p class="shop-person"><label>发票号：</label><span>91002238388388383833838</span></p>
-                <p class="shop-address"><label>产品名称：</label><span>杭州乐嘉科技有限公司</span></p>
-                <p><label>金额：</label><span class="numberRed">￥120000</span>&nbsp;&nbsp;&nbsp;<label>折扣：</label><span class="numberRed">￥120000</span></p>
-                <p><label>收货人：</label><span class="numberRed">￥10000</span>&nbsp;&nbsp;&nbsp;<label>核销状态：</label><span class="numberRed">未审核</span></p>
-            </div>
-        </div>
-        <div class="position-module">
-            <div class="approve">
-                <div class="item">
-                    <p class="check-all"><input type="checkbox" class="check-all-input" style="margin-right: 0.066666rem;">全选</p>
-                </div>
-                <div class="item" style="margin-right: -1.8rem;"><p><label style="font-size:0.413333rem">合计：</label><span class="numberRed" style="font-size:0.413333rem">￥0</span></p></div>
-                <div class="item">
-                    <a href="confirmVerification.html"><button class="btn btn-xs btn-default approve-button">订单核销</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-   
-    <!--尾部-->
-    <div class="height15">
-    </div>
-    <div class="footer-module clearfix">
-        <a href="./workTable.html">
-            <div class="footer-item">
-                <i class="icon pro"></i>
-                <span class="name">工作台</span>
-            </div>
-        </a>
-        <a href="./protocol.html">
-            <div class="footer-item">
-                <i class="icon order"></i>
-                <span class="name">协议产品</span>
-            </div>
-        </a>
-        <a href="./order.html">
-            <div class="footer-item">
-                <i class="icon audit"></i>
-                <span class="name">订单</span>
-            </div>
-        </a>
-        <a href="./userMsg.html">
-            <div class="footer-item">
-                <i class="icon per"></i>
-                <span class="name">我</span>
-            </div>
-        </a>
-    </div>
-
-    <script>
-        $(document).ready(function () {
-            
-        })
-    </script>
 </body>
+<script>
+ $('.serviceBox .servicesR').click(function () {
+        console.dir($(this).children(".servicesP").find('.firstSpan').children("#chkQuantityBind1"));
+        $(this).children("#chkQuantityBind1").prop('checked',true);
+        $(this).children(".servicesP").find('.firstSpan').children(".chkQuantityBind1").prop('checked',true)
+
+        $(this).children('.servicesP').children('.firstSpan').find("input").eq(0).change(function () {//选择按量绑定产品,计算总价
+
+        });
+        if ($(this).hasClass("br")) {
+           $(this).children('.servicesP').children('.firstSpan').find("input").eq(0).removeAttr("checked", 'checked');
+           $(this).removeClass("br");
+          stockCheckAndSumPrice(tfQuantity);
+        } else {
+           
+           $(this).children(".servicesP").find('.firstSpan').children(".chkQuantityBind2").prop('checked', true)
+           $(this).addClass("br");
+           stockCheckAndSumPrice(tfQuantity);
+        }
+    })
+    $('.serviceBox .servicesK').click(function () {
+       var select = $(this).find(".select").context.value;
+       var name = $(this).find(".select").context.name;
+       $("input[sign='" + name + "']").each(function (i) {
+           $(this).removeAttr("checked", 'checked');
+       });
+       if ($(this).hasClass("br")) {
+           $("#" + select).children('.firstSpan').find("input").eq(0).removeAttr("checked", 'checked');
+           $(this).removeClass("br");
+           stockCheckAndSumPrice(tfQuantity);
+       } else {
+           //$(this).children('.servicesP').children('.firstSpan').find('input').eq(0).attr("checked");
+           $("#" + select).find('.firstSpan').children(".chkQuantityBind2").prop('checked', true)
+           $(this).addClass("br");
+           stockCheckAndSumPrice(tfQuantity);
+       }
+    });
+
+</script>
+
+
+
+
+
 </html>

@@ -1,6 +1,45 @@
-body, html {
-    background: #fff;
+
+html, body {
+    background: #eee;
+    font-family: "Microsoft YaHei";
 }
+.mtb15 {
+    margin: 0.2rem 0 0.2rem 0;
+}
+
+/*头部样式*/
+.input-group input {
+    width: 98% !important;
+    margin-left: 1%;
+}
+
+.input-group-addon1 {
+    padding: 6px 9px !important;
+    background-color: #fff;
+    border: none;
+    border: 1px solid #ccc !important;
+    border-radius: 50% !important;
+}
+
+.input-group input,
+.br10 {
+    border-radius: 10px !important;
+}
+
+.box {
+    position: relative;
+    border-radius: 10px;
+    background: #ffffff;
+    border: 1px solid #F0EFED;
+    padding: 0.066666rem;
+    width: 100%;
+}
+
+.with-border {
+    border-bottom: 1px solid #F0EFED;
+}
+
+/*主体*/
 /*列表页样式*/
 .addressInofModule {
 }
@@ -33,26 +72,27 @@ body, html {
 }
 
 .addressModule {
-    margin: 1.2rem 0.2666rem 2rem;
+    margin: 0.2rem 0.2666rem 2rem;
 }
 
 .addressInof {
-    padding: 0.1333rem 0;
+    margin: 0.1333rem 0;
     display: flex;
     align-items: center;
     flex-direction: row;
+    background: #fff;
+    border: 1px solid #5e5e5e;
+    border-radius: 0.133rem;
 }
 
 .inofModule {
     width: 90%;
-    border: 1px solid #5e5e5e;
     padding: 0.133rem;
-    border-radius: 0.133rem;
 }
 
-    .inofModule.active {
-        border: 1px solid #ff0000;
-    }
+.addressInof.active {
+    border: 1px solid #ff0000;
+}
 
 .editBtn {
     width: 10%;
@@ -89,7 +129,7 @@ body, html {
     position: fixed;
     left: 0;
     bottom: 0;
-    background: #fff;
+    background: #eee;
     z-index:99;
 }
 
@@ -97,14 +137,13 @@ body, html {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-    background: #ff0000;
-    color: #fff;
+    background: #fff;
+    color: #ff0000;
     font-size: 0.4rem;
     padding: 0.16rem 0;
     border-radius: 0.4rem;
+    border:1px solid #ff0000;
 }
-.addBtn a{
-    color:#fff;
-}
+
 /*维护页样式*/
 

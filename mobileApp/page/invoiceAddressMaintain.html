@@ -11,6 +11,17 @@
     <link rel="stylesheet" href="../weUI/lib/weui.css">
     <link rel="stylesheet" href="../weUI/css/jquery-weui.css">
     <style>
+        html, body {
+            background: #fff;
+        }
+
+        .moduleFooter {
+            background: #fff;
+        }
+
+        .addressModule {
+            margin: 1.2rem 0.2666rem 2rem;
+        }
         lable {
             font-weight: 500;
         }
@@ -46,9 +57,26 @@
 <body ontouchstart>
     <div class="moduleHeader">
         <p class="iCone" onclick="window.history.back()"><i class="glyphicon glyphicon-menu-left "></i></p>
-        <p class="moduleTitle">发票地址维护</p>
+        <p class="moduleTitle"><!--发票地址维护--></p>
         <p class="iCone delBtn" onclick="window.history.back()">删除</p>
     </div>
+    <!--<div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="input-group mtb15">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-menu-left"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="收货地址列表">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                </div>
+            </div>
+        </header>
+    </div>-->
+   
+
     <div class="container">
         <div class="addressModule">
             <div class="weui-cells weui-cells_form">

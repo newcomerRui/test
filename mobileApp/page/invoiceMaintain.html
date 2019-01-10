@@ -17,6 +17,17 @@
     <script src="../../Scripts/jQuery-File-Upload/js/cors/jquery.xdr-transport.js"></script>
     <script src="../../Scripts/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>-->
     <style>
+        html, body {
+            background: #fff;
+        }
+
+        .moduleFooter {
+            background: #fff;
+        }
+
+        .addressModule {
+            margin: 1.2rem 0.2666rem 2rem;
+        }
         lable {
             font-weight: 500;
         }
@@ -151,9 +162,10 @@
 <body ontouchstart>
     <div class="moduleHeader">
         <p class="iCone" onclick="window.history.back()"><i class="glyphicon glyphicon-menu-left "></i></p>
-        <p class="moduleTitle">发票信息维护</p>
+        <p class="moduleTitle"><!--发票信息维护--></p>
         <p class="iCone delBtn" onclick="window.history.back()">删除</p>
     </div>
+   
     <div class="container">
         <div class="addressModule">
             <div class="weui-cells weui-cells_form">
@@ -275,9 +287,9 @@
             var pageType = GetQueryString('type');
             if (pageType == 'add') {
                 $('.delBtn').hide();
-                $('.moduleTitle').text("新建发票信息");
+                //$('.moduleTitle').text("新建发票信息");
             } else if (pageType == 'edit') {
-                $('.moduleTitle').text("编辑发票信息");
+                //$('.moduleTitle').text("编辑发票信息");
             }
         });
         $("#invoiceType").select({
@@ -352,7 +364,7 @@
     <script type="text/javascript">
         var formData = new FormData();
         function imgChange(obj1, obj2) {
-            //var test = $('#file')[0].files[0];		
+            //var test = $('#file')[0].files[0];
             //formData.append('version_file', test);
             //获取点击的文本框
             var file = document.getElementById("file");

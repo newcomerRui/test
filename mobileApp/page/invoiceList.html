@@ -13,19 +13,35 @@
     <script src="../bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
-    <div class="moduleHeader">
+    <!--<div class="moduleHeader">
         <p class="iCone" onclick="window.history.back()"><i class="glyphicon glyphicon-menu-left "></i></p>
         <p class="moduleTitle">常用发票列表</p>
         <p class="iCone" id="searchBtn"><i class="glyphicon glyphicon-search"></i></p>
+    </div>-->
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="input-group mtb15">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-menu-left"></i>
+                    </span>
+                    <input type="text" class="form-control" placeholder="常用发票列表">
+                    <span class="input-group-addon input-group-addon1">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+                </div>
+            </div>
+        </header>
     </div>
+
     <div class="container">
         <div class="addressModule">
-            <div class="form-group searchInput" style="display:none;">
+            <!--<div class="form-group searchInput" style="display:none;">
                 <input type="email" class="form-control" id="" placeholder="请输入搜索条件">
-            </div>
+            </div>-->
             <ul class="addressInofModule">
-                <li class="addressInof ">
-                    <div class="inofModule active" onclick="window.history.back()">
+                <li class="addressInof active">
+                    <div class="inofModule" onclick="window.history.back()">
                         <p class="company">北京朝气蓬勃信息技术有限公司</p>
                         <p><span class="personName">增值税发票</span><span class="personPhone">91440300MA5F191723</span></p>
                         <p><span class="personName">开户行：</span><span class="personAddress">北京市海淀区上地支行</span></p>

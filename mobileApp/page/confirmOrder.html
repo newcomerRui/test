@@ -20,218 +20,230 @@
     <script src="../bootstrap/js/bootstrap.js"></script>
 </head>
 <body>
-<div class="container-fluid">
-    <header class="row">
-        <div class="col-xs-12">
-            <div class="input-group mtb15">
+    <div class="container-fluid">
+        <header class="row">
+            <div class="col-xs-12">
+                <div class="input-group mtb15">
                     <span class="input-group-addon input-group-addon1">
                         <i class="glyphicon glyphicon-menu-left"></i>
                     </span>
-                <input type="text" class="form-control" placeholder="确认下单">
-                <span class="input-group-addon input-group-addon1">
+                    <input type="text" class="form-control" placeholder="确认下单">
+                    <span class="input-group-addon input-group-addon1">
                         <i class="glyphicon glyphicon-search"></i>
                     </span>
+                </div>
             </div>
-        </div>
-    </header>
-</div>
+        </header>
+    </div>
 
-<div class="confirmMain">
-    <section class="receiverDes">
-        <b>收货人信息</b>
-        <i>默认收货地址</i>
-        <p class="manAddress">河北省定州市南城区西大街202号</p>
-        <p class="manDes"><span>王XX</span> <span>152xxxxxxxx</span></p>
-        <div class="confirmBtn">
-            <button onclick="window.location='./deliveryAddress.html'">收货地址</button>
-            <!--<button>新增收货地址</button>-->
-        </div>
-    </section>
-    <section class="invoiceDes">
-        <b>发票信息</b>
-        <br>
+    <div class="confirmMain">
+        <section class="receiverDes">
+            <b>收货人信息</b>
+            <i>默认收货地址</i>
+            <p class="manDes"><span>王XX</span> <span>152xxxxxxxx</span></p>
+            <p class="manAddress">河北省定州市南城区西大街202号</p>
+            <div class="confirmBtn">
+                <button>收货地址</button>
+            </div>
+        </section>
+        <section class="invoiceDes">
+            <b>发票信息</b>
+            <br>
+            <p>发票抬头：北京神灯信息技术有限公司</p>
             <input type="radio" name="firm" id="firm1" checked>
             <label for="firm1">个人</label>
             <input type="radio" name="firm" id="firm2">
             <label for="firm2">公司</label>
-        <div class="confirmBtn">
-            <button onclick="window.location='./invoiceList.html'">发票信息</button>
-            <!--<button>新增发票地址</button>-->
-        </div>
-    </section>
-    <section class="invoiceAddressDes">
-        <b>发票邮寄地址</b>
-        <i>默认收货地址</i>
-        <p class="manAddress">河北省定州市南城区西大街202号</p>
-        <p class="manDes"><span>王XX</span> <span>152xxxxxxxx</span></p>
-        <div class="confirmBtn">
-            <button onclick="window.location='./invoiceAddress.html'">发票邮寄地址</button>
-            <!--<button>新增收货地址</button>-->
-        </div>
-    </section>
-    <div class="orderDes">
-        <b>订单信息</b>
-        <div>
-            <p class="productImg"><img src="http://madp.lenovo.cn/group1/M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg?groupName=group1&fileName=M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg" alt=""></p>
-            <div class="infor">
-                <span class="productName">ThinkCentre M710t-N000 I5-7500 8G1T</span>
-                <span class="description">第七代智能英特尔@酷睿™i5-7200U处理器(2.5睿频至3.1GHz,3MB)/8GB 2133MHz DDR4 内存/1TB 5400rpm SATA硬盘/预装正版Windows 10 中文家庭版64位/14英寸FHD(1920*1080) IPS/AMD Radeon? R5 M430 2G独显/Intel 8265 AC 2x2+BT4.1/普通键盘/6芯锂离子电池（47Wh）/1年部件和人工，送1年有限上门</span>
-                <i>￥3999</i>
-                <i>X1</i>
+            <p>北京市海淀区上地五街/15210531191</p>
+            <p>税号：12344532222</p>
+            <div class="confirmBtn">
+                <button>发票信息</button>
             </div>
-        </div>
-        <div>
-            <p class="productImg"><img src="http://madp.lenovo.cn/group1/M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg?groupName=group1&fileName=M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg" alt=""></p>
-            <div class="infor">
-                <span class="productName">ThinkCentre M710t-N000 I5-7500 8G1T</span>
-                <span class="description">第七代智能英特尔@酷睿™i5-7200U处理器(2.5睿频至3.1GHz,3MB)/8GB 2133MHz DDR4 内存/1TB 5400rpm SATA硬盘/预装正版Windows 10 中文家庭版64位/14英寸FHD(1920*1080) IPS/AMD Radeon? R5 M430 2G独显/Intel 8265 AC 2x2+BT4.1/普通键盘/6芯锂离子电池（47Wh）/1年部件和人工，送1年有限上门</span>
-                <i>￥3999</i>
-                <i>X1</i>
+        </section>
+        <section class="invoiceAddressDes">
+            <b>发票邮寄地址</b>
+            <i>默认收货地址</i>
+            <p class="manDes"><span>王XX</span> <span>152xxxxxxxx</span></p>
+            <p class="landLine">010-77586215</p>
+            <p class="manAddress">河北省定州市南城区西大街202号</p>
+            <div class="confirmBtn">
+                <button>发票邮寄地址</button>
             </div>
-        </div>
-    </div>
-    <div class="couponBtn">
-        使用优惠券 <img src="../img/rightArrow.png" alt="">
-    </div>
-</div>
-<!--尾部-->
-<div class="footer-module clearfix">
-    <a href="./workTable.html">
-        <div class="footer-item">
-            <i class="icon pro"></i>
-            <span class="name">工作台</span>
-        </div>
-    </a>
-    <a href="./shopcar.html">
-        <div class="footer-item">
-            <i class="icon order"></i>
-            <span class="name">协议产品</span>
-        </div>
-    </a>
-    <a href="./order.html">
-        <div class="footer-item">
-            <i class="icon audit"></i>
-            <span class="name">订单</span>
-        </div>
-    </a>
-    <a href="./userMsg.html">
-        <div class="footer-item">
-            <i class="icon per"></i>
-            <span class="name">我</span>
-        </div>
-    </a>
-</div>
-<div class="conponMask">
-    <div class="dhCoupon">
-        <p>
-            <b>兑换优惠券</b>
-            <span class="dhConponClose">×</span>
-        </p>
-        <div class="exchange">
-            <b>请输入券码:</b>
-            <div class="qmcode">
-                <input type="type" name="name" value="" maxlength="1">
-                <input type="type" name="name" value="" maxlength="1">
-                <input type="type" name="name" value="" maxlength="1">
-                <input type="type" name="name" value="" maxlength="1">
-                <input type="type" name="name" value="" maxlength="1">
-                <input type="type" name="name" value="" maxlength="1">
-                <b id="bUseqmcode">兑换并使用</b>
-            </div>
-        </div>
-    </div>
-    <div class="coupon">
-        <p>
-            <b>优惠券</b>
-            <span class="conponClose">×</span>
-            <span class="dhBtn" style="text-align: right;font-size: 0.3rem;line-height: 0.7rem">兑换优惠券</span>
-        </p>
-        <div class="couponNav">
-            <span class="active">可用优惠券</span>
-            <span>不可用优惠券</span>
-        </div>
-        <div class="Available">
-            <div class="quan">
-                <img class="xzImg" src="../img/in.png" alt="">
-                <div class="money" title="测试">测试</div>
-                <div class="valid">有效期至<span>2019-02-08 15:33:31</span></div>
-                <div class="kind"><span>优惠券</span></div>
-                <b class="yhtishi"></b>
-            </div>
-            <div class="quan">
-                <img class="xzImg" src="../img/in.png" alt="">
-                <div class="money" title="测试">测试</div>
-                <div class="valid">有效期至<span>2019-02-08 15:33:31</span></div>
-                <div class="kind"><span>优惠券</span></div>
-                <b class="yhtishi"></b>
-            </div>
-        </div>
-        <div class="unavailable">
-            <div class="notQuan">
-                <img class="xzImg" src="../img/in.png" alt="">
-                <div class="money" title="测试">测试</div>
-                <div class="valid">有效期至<span>2019-02-08 15:33:31</span></div>
-                <div class="kind"><span>优惠券</span></div>
-                <b class="yhtishi"></b>
-            </div>
-        </div>
+        </section>
 
+        <div class="orderDes">
+            <div class="couponBtn">
+                使用优惠券 <img src="../img/rightArrow.png" alt="">
+            </div>
+            <b>订单信息</b>
+            <div>
+                <p class="productImg"><img src="http://madp.lenovo.cn/group1/M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg?groupName=group1&fileName=M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg" alt=""></p>
+                <div class="infor">
+                    <span class="productName">ThinkCentre M710t-N000 I5-7500 8G1T</span>
+                    <span class="description">第七代智能英特尔@酷睿™i5-7200U处理器(2.5睿频至3.1GHz,3MB)/8GB 2133MHz DDR4 内存/1TB 5400rpm SATA硬盘/预装正版Windows 10 中文家庭版64位/14英寸FHD(1920*1080) IPS/AMD Radeon? R5 M430 2G独显/Intel 8265 AC 2x2+BT4.1/普通键盘/6芯锂离子电池（47Wh）/1年部件和人工，送1年有限上门</span>
+                    <i>￥3999 <span style="font-weight: normal;font-size: 0.4rem">X1</span></i>
+                    <i>优惠：199</i>
+                </div>
+            </div>
+            <div>
+                <p class="productImg"><img src="http://madp.lenovo.cn/group1/M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg?groupName=group1&fileName=M00/C5/6A/CmBpJVszBBWAduF-AANDJxiaUw845.jpeg" alt=""></p>
+                <div class="infor">
+                    <span class="productName">ThinkCentre M710t-N000 I5-7500 8G1T</span>
+                    <span class="description">第七代智能英特尔@酷睿™i5-7200U处理器(2.5睿频至3.1GHz,3MB)/8GB 2133MHz DDR4 内存/1TB 5400rpm SATA硬盘/预装正版Windows 10 中文家庭版64位/14英寸FHD(1920*1080) IPS/AMD Radeon? R5 M430 2G独显/Intel 8265 AC 2x2+BT4.1/普通键盘/6芯锂离子电池（47Wh）/1年部件和人工，送1年有限上门</span>
+                    <i>￥3999 <span style="font-weight: normal;font-size: 0.4rem">X1</span></i>
+                    <i>优惠：199</i>
+                </div>
+            </div>
+            <div class="total">
+                <div class="totalcount">
+                    <p><i>应付金额：</i><span>7998</span></p>
+                    <p><i>优惠金额：</i><span>0</span></p>
+                    <p style="font-weight: bold"><i style="color: #000">总计：</i><span>7998</span></p>
+                </div>
+            </div>
+            <div class="confirmOrder">
+                <button id="confirmOrderBtn">确认下单</button>
+            </div>
+        </div>
     </div>
-</div>
-<script>
-    $(function () {
-        $('.couponNav span').click(function () {
-            var $index=$(this).index();
-            if(!$(this).hasClass('active')){
-                $(this).addClass('active').siblings().removeClass('active');
+    <!--尾部-->
+    <div class="footer-module clearfix">
+        <a href="./workTable.html">
+            <div class="footer-item">
+                <i class="icon pro"></i>
+                <span class="name">工作台</span>
+            </div>
+        </a>
+        <a href="./shopcar.html">
+            <div class="footer-item">
+                <i class="icon order"></i>
+                <span class="name">协议产品</span>
+            </div>
+        </a>
+        <a href="./order.html">
+            <div class="footer-item">
+                <i class="icon audit"></i>
+                <span class="name">订单</span>
+            </div>
+        </a>
+        <a href="./userMsg.html">
+            <div class="footer-item">
+                <i class="icon per"></i>
+                <span class="name">我</span>
+            </div>
+        </a>
+    </div>
+    <div class="conponMask">
+        <div class="dhCoupon">
+            <p>
+                <b>兑换优惠券</b>
+                <span class="dhConponClose">×</span>
+            </p>
+            <div class="exchange">
+                <b>请输入券码:</b>
+                <div class="qmcode">
+                    <input type="type" name="name" value="" maxlength="1">
+                    <input type="type" name="name" value="" maxlength="1">
+                    <input type="type" name="name" value="" maxlength="1">
+                    <input type="type" name="name" value="" maxlength="1">
+                    <input type="type" name="name" value="" maxlength="1">
+                    <input type="type" name="name" value="" maxlength="1">
+                    <b id="bUseqmcode">兑换并使用</b>
+                </div>
+            </div>
+        </div>
+        <div class="coupon">
+            <p>
+                <b>优惠券</b>
+                <span class="conponClose">×</span>
+                <span class="dhBtn" style="text-align: right;font-size: 0.3rem;line-height: 0.7rem">兑换优惠券</span>
+            </p>
+            <div class="couponNav">
+                <span class="active">可用优惠券</span>
+                <span>不可用优惠券</span>
+            </div>
+            <div class="Available">
+                <div class="quan">
+                    <img class="xzImg" src="../img/in.png" alt="">
+                    <div class="money" title="测试">测试</div>
+                    <div class="valid">有效期至<span>2019-02-08 15:33:31</span></div>
+                    <div class="kind"><span>优惠券</span></div>
+                    <b class="yhtishi"></b>
+                </div>
+                <div class="quan">
+                    <img class="xzImg" src="../img/in.png" alt="">
+                    <div class="money" title="测试">测试</div>
+                    <div class="valid">有效期至<span>2019-02-08 15:33:31</span></div>
+                    <div class="kind"><span>优惠券</span></div>
+                    <b class="yhtishi"></b>
+                </div>
+            </div>
+            <div class="unavailable">
+                <div class="notQuan">
+                    <img class="xzImg" src="../img/in.png" alt="">
+                    <div class="money" title="测试">测试</div>
+                    <div class="valid">有效期至<span>2019-02-08 15:33:31</span></div>
+                    <div class="kind"><span>优惠券</span></div>
+                    <b class="yhtishi"></b>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('.couponNav span').click(function () {
+                var $index = $(this).index();
+                if (!$(this).hasClass('active')) {
+                    $(this).addClass('active').siblings().removeClass('active');
+                }
+                if ($index) {
+                    $('.unavailable').show();
+                    $('.Available').hide();
+                } else {
+                    $('.Available').show();
+                    $('.unavailable').hide();
+                }
+            })
+        });
+        $('.conponMask').bind("touchmove", function (e) {
+            e.preventDefault();
+        });
+        $('.quan').click(function () {
+            var oldQuan = $(this).siblings('.quan');
+            oldQuan.removeClass('onquan');
+            oldQuan.find($('.xzImg')).hide();
+            oldQuan.css('opacity', 0.5);
+            if (!$(this).hasClass('onquan')) {
+                $(this).addClass('onquan');
+                $(this).find($('.xzImg')).show();
+                $(this).css('opacity', 1)
+            } else {
+                $(this).removeClass('onquan');
+                $(this).find($('.xzImg')).hide();
+                $(this).css('opacity', 0.5)
             }
-            if($index){
-                $('.unavailable').show();
-                $('.Available').hide();
-            }else {
-                $('.Available').show();
-                $('.unavailable').hide();
+        });
+        $('.couponBtn').click(function () {
+            $('.conponMask').show();
+        });
+        $('.conponClose').click(function () {
+            $('.conponMask').hide();
+        })
+        $('.conponMask').click(function (e) {
+            var even = e.target;
+            if (even.className == 'conponMask') {
+                $('.conponMask').hide();
             }
         })
-    });
-    $('.conponMask').bind("touchmove",function(e){
-        e.preventDefault();
-    });
-    $('.quan').click(function () {
-        var oldQuan = $(this).siblings('.quan');
-        oldQuan.removeClass('onquan');
-        oldQuan.find($('.xzImg')).hide();
-        oldQuan.css('opacity', 0.5);
-        if (!$(this).hasClass('onquan')) {
-            $(this).addClass('onquan');
-            $(this).find($('.xzImg')).show();
-            $(this).css('opacity', 1)
-        }else {
-            $(this).removeClass('onquan');
-            $(this).find($('.xzImg')).hide();
-            $(this).css('opacity', 0.5)
-        }
-    });
-    $('.couponBtn').click(function () {
-        $('.conponMask').show();
-    });
-    $('.conponClose').click(function () {
-        $('.conponMask').hide();
-    })
-    $('.conponMask').click(function (e) {
-        var even=e.target;
-        if(even.className=='conponMask'){
-            $('.conponMask').hide();
-        }
-    })
-    $('.dhBtn').click(function () {
-        $('.coupon').hide();
-        $('.dhCoupon').show();
-    })
-    $('.dhConponClose').click(function () {
-        $('.dhCoupon').hide();
-        $('.coupon').show();
-    })
-</script>
+        $('.dhBtn').click(function () {
+            $('.coupon').hide();
+            $('.dhCoupon').show();
+        })
+        $('.dhConponClose').click(function () {
+            $('.dhCoupon').hide();
+            $('.coupon').show();
+        })
+    </script>
 </body>
 </html>
